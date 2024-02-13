@@ -150,7 +150,7 @@ body {
 
 @keyframes up {
   0% {transform: translateY(0);}
-  100% {transform: translateY(-200px);}
+  100% {transform: translateY(-220px);}
 }
 
 @keyframes upTwo {
@@ -186,5 +186,4 @@ body {
 .text:hover:before {
   content:"Я готов сделать всё возможное и невозможное, лишь бы видеть тебя счастливой. Я тебя люблю";
   font-size:25px;
-
 }
