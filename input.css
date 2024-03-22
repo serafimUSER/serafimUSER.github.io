@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Include fonts */
+/* Macherie */
+@font-face {
+    font-family: "Macherie";
+    font-weight: 600;
+    src: url("../fonts/macherie.otf");
+}
+/* Cruinn */
+@font-face {
+    font-family: "Cruinn";
+    font-weight: 100;
+    src: url("../fonts/Cruinn Thin.ttf");
+}
+@font-face {
+    font-family: "Cruinn";
+    font-weight: 300;
+    src: url("../fonts/Cruinn Light.ttf");
+}
+@font-face {
+    font-family: "Cruinn";
+    font-weight: 400;
+    src: url("../fonts/Cruinn Regular.ttf");
+}
+@font-face {
+    font-family: "Cruinn";
+    font-weight: 500;
+    src: url("../fonts/Cruinn Medium.ttf");
+}
+@font-face {
+    font-family: "Cruinn";
+    font-weight: 700;
+    src: url("../fonts/Cruinn Bold.ttf");
+}
+@font-face {
+    font-family: "Cruinn";
+    font-weight: 900;
+    src: url("../fonts/Cruinn Black.ttf");
+}
+
+
+@layer components {
+    .container {
+        @apply max-w-[1370px]
+    }
+}
+
+.Bunner-Image {
+    background-size: cover;
+    background-position: center center;
+}
+
+.mainText {
+    font-family: "Macherie", sans-serif;
+}
+
+.secondaryText {
+    font-family: "Cruinn", sans-serif;
+}
+
+.img-rounded {
+    border-radius: 500px 500px 0 0;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #9c9c9c; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #474747; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #383838; 
+}

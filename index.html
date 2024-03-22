@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="./src/app.js" defer></script>
+    <script src="./src/asyncLoadingImages.js" defer></script>
+    <title>Музей</title>
+</head>
+<body class="bg-bgbeige overflow-x-hidden">
+    <div class="w-[100vw] h-[100vh] fixed top-0 left-0" style="background: #5a5a5a4e; backdrop-filter: blur(7px); z-index: 100;" id="image-show">
+        <div class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] max-w-1/3 max-h-1/3 flex justify-center items-center" id="innerWind">
+
+        </div>
+    </div>
+    <section id="Banner-Block">
+        <div class="w-full h-[900px] md:h-[400px] sm:h-[200px] Bunner-Image asyncImage" data-src="./images/Cover.png">
+            <div class="container">
+                <h1 class="pt-[100px] mainText text-[100px] leading-[110px] text-lightred lg:text-[75px] lg:leading-[75px] lg:px-[20px] md:text-[55px] md:leading-[55px] md-sm:text-[44px] md-sm:leading-[44px] sm:text-[30px] sm:leading-[31px] sm:pt-[20px]">Исторический Музей “Юные Защитники Отечества”</h1>
+            </div>
+        </div>
+    </section>
+    <section id="Museum-Info w-full">
+        <div class="container mt-[100px] mb-[100px] sm:mt-[20px] px-[20px] sm:mb-[20px] md:mt-[40px] md:mb-[40px]">
+            <h1 class="mainText text-[86px] text-lightred sm:text-[20px] sm:leading-[22px] md:text-[42px] md:leading-[42px]">О Музее</h1>
+            <div class="flex justify-between items-start md:flex-col">
+                <p class="secondaryText font-medium w-[870px] text-[32px] md:mt-[20px] leading-[33.5px] sm:w-full sm:leading-[12px] sm:mt-[10px] sm:text-[11px] md:text-[24px] md:w-full md:leading-[24.5px]">
+                    40 лет назад, 21 февраля 1980 года в СШ №54 (ныне гимназия №7) г. Минска была открыта Комната боевой славы, в которой учащимися и педагогами был собран большой материал о юных защитниках Отечества. Ученики проводили большую работу по патриотическому воспитанию, по увековечиванию памяти о людях, принесших на нашу белорусскую землю долгожданную победу над фашистскими захватчиками. Эта работа неоднократно освещалась в средствах массовой информации, на телевидении. За успехи в патриотическом воспитании, и большую работу Комната боевой славы награждалась грамотами, вымпелами Президиума Советского комитета ветеранов войны и других патриотических организаций.
+                </p>
+                <div class="w-[388px] h-[538px] md:mt-[40px] md:mx-auto relative sm:w-[138px] sm:mt-[10px] sm:h-[198px] sm:mx-auto">
+                    <div class="w-[378px] h-[528px] sm:w-[132px] sm:h-[192px] border-lightred border-solid border-[2px] absolute right-0 top-0 img-rounded"></div>
+                    <img src="./images/loader-bg.svg" data-src="./images/IMG_5382.jpg" class="asyncImage w-[378px] h-[528px] sm:w-[132px] sm:h-[192px] absolute object-cover left-0 bottom-0 img-rounded" alt="Image-1" />
+                </div>
+            </div>
+            
+            <div class="flex justify-between mt-[110px] md:mt-[50px] items-start md:flex-col sm:mt-[15px]">
+                <div class="w-[388px] md:mt-[40px] h-[538px] md:mx-auto relative md:order-2 sm:w-[138px] sm:mt-[10px] sm:h-[198px] sm:mx-auto ">
+                    <div class="w-[378px] h-[528px] sm:w-[132px] sm:h-[192px] border-lightred border-solid border-[2px] absolute right-0 top-0 img-rounded"></div>
+                    <img src="./images/loader-bg.svg" data-src="./images/IMG_5374.jpg" class="asyncImage w-[378px] h-[528px] sm:w-[132px] sm:h-[192px] absolute object-cover left-0 bottom-0 img-rounded" alt="Image-1" />
+                </div>
+                <p class="secondaryText font-medium w-[870px] text-[32px] md:mt-[40px] leading-[33.5px] sm:w-full sm:leading-[12px] sm:mt-[10px] sm:text-[11px] md:text-[24px] md:w-full md:leading-[24.5px] md:order-1">
+                    В марте 2019 года на основе материалов архива Комнаты боевой славы была издана книга «Маленькие солдаты большой войны», а в июне 2020 года вышла в свет книга на белорусском языке «Вайна. Юнацтва. Подзвіг». В июне 2023 года Комната боевой славы получила статус (военно-исторического) музея «Юные защитники Отечества». Комната боевой славы «Юные защитники Отечества» постоянно пополняется новыми экспонатами, документами, книгами о юных защитниках Родины. Комнату боевой славы посещают школьники Партизанского района и других районов г. Минска. На базе Комнаты боевой славы снимаются сюжеты для телевизионных программ и передач, а также фильмы о юных защитниках Родины. При подготовке к районным и городским конференциям учащихся, связанным с периодом Великой Отечественной войны, учащиеся нашей гимназии получают возможность пользоваться архивными материалами Комнаты, получают квалифицированную консультацию по различным темам.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="Expositions-And-Books">
+        <div class="bg-darkgray w-full min-h-[200px] pb-[100px] sm:pb-[20px]">
+            <div class="container px-[20px]">
+                <div class="pt-[100px] pb-[50px] flex justify-start items-start gap-[50px] md:gap-[25px] md:pt-[35px] md:pb-[25px] sm:gap-[10px] sm:pt-[20px] sm:pb-[10px]">
+                    <button class="mainText text-lightred text-5xl transition duration-200 hover:opacity-100 md:text-[24px] sm:text-[14px]" id="Item_0_SwitchBtn">
+                        Экспозиции
+                    </button>
+                    <button class="mainText text-lightred text-5xl opacity-40 transition duration-200 hover:opacity-100 md:text-[24px] sm:text-[14px]" id="Item_1_SwitchBtn">
+                        Книги
+                    </button>
+                </div>
+                <div id="contentItem">
+                    <div class="grid grid-cols-2 gap-[40px] sm:gap-[10px] md:grid-cols-1 md:max-w-full max-w-[1240px] mx-auto">
+                        <img src="./images/sm.aspx-2.jpeg" alt="image-info-exposition" class="w-[600px] mx-auto h-[350px] sm:h-[180px] object-cover snap-center rounded-[15px] sm:mb-[5px]" />
+                        <img src="./images/sm.aspx.jpeg"   alt="image-info-exposition" class="w-[600px] mx-auto h-[350px] sm:h-[180px] object-cover snap-center rounded-[15px] sm:mb-[5px]" />
+                        <img src="./images/sm.aspx-3.jpeg" alt="image-info-exposition" class="w-[600px] mx-auto h-[350px] sm:h-[180px] object-cover snap-center rounded-[15px] sm:mb-[5px]" />
+                        <img src="./images/sm.aspx-4.jpeg" alt="image-info-exposition" class="w-[600px] mx-auto h-[350px] sm:h-[180px] object-cover snap-center rounded-[15px] sm:mb-[5px]" />
+                        <img src="./images/sm.aspx-5.jpeg" alt="image-info-exposition" class="w-[600px] mx-auto h-[350px] sm:h-[180px] object-cover snap-center rounded-[15px] sm:mb-[5px]" />
+                        <img src="./images/sm.aspx-6.jpeg" alt="image-info-exposition" class="w-[600px] mx-auto h-[350px] sm:h-[180px] object-cover snap-center rounded-[15px] sm:mb-[5px]" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container md:px-[20px]">
+            <h1 class="mainText pt-[100px] text-[86px] text-lightred md:pt-[20px] sm:text-[18px] md:text-[42px] md:leading-[42px] ">Мероприятия в музее</h1>
+            <div class="max-w-[1180px] mt-[50px] mx-auto pb-[100px] md:max-w-full md:mt-[15px] md:pb-[20px]">
+                <div class="flex justify-between items-start md:flex-col">
+                    <div class="w-[280px] md:w-full flex flex-col gap-[20px]">
+                        <img src="./images/loader-bg.svg" data-src="./images/IMG_0775-1 2.jpg" class="asyncImage w-[280px] h-[262px] md:w-full object-cover rounded-[15px] snap-center" alt="IMG_1612" /> 
+                        <img src="./images/loader-bg.svg" data-src="./images/IMG_1562.JPG" class="asyncImage w-[280px] h-[262px] md:w-full object-cover rounded-[15px] snap-center" alt="IMG_1612" /> 
+                    </div>
+                    <img src="./images/loader-bg.svg" data-src="./images/IMG_1881.JPG" class="asyncImage w-[280px] h-[544px] md:w-full md:h-[262px] md:my-[20px] object-cover rounded-[15px] snap-center" alt="IMG_1612" /> 
+                    <div class="flex flex-col gap-[20px] md:w-full">
+                        <img src="./images/loader-bg.svg" data-src="./images/комната боевой славы гимн. № 7.jpg" class="asyncImage w-[580px] h-[262px] object-cover rounded-[15px] snap-center md:w-full" alt="IMG_1612" />
+                        <div class="flex w-[580px] justify-between md:flex-col md:w-full md:gap-[20px]">
+                            <img src="./images/loader-bg.svg" data-src="./images/IMG_0025.JPG" class="asyncImage w-[280px] md:w-full h-[262px] object-cover rounded-[15px] snap-center" alt="IMG_1612" /> 
+                            <img src="./images/loader-bg.svg" data-src="./images/IMG_1934.JPG" class="asyncImage w-[280px] md:w-full h-[262px] object-cover rounded-[15px] snap-center" alt="IMG_1612" /> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start mt-[20px] md:flex-col md:gap-[20px]">
+                    <img src="./images/loader-bg.svg" data-src="./images/IMG_0511.JPG" class="asyncImage w-[181px] h-[262px] object-cover rounded-[15px] snap-center md:w-full" alt="IMG_1612" /> 
+                    <img src="./images/loader-bg.svg" data-src="./images/IMG_1612.JPG" class="asyncImage w-[379px] md:w-full h-[262px] object-cover rounded-[15px] snap-center" alt="IMG_1612" /> 
+                    <img src="./images/loader-bg.svg" data-src="./images/IMG_0575.JPG" class="asyncImage w-[580px] md:w-full h-[262px] object-cover rounded-[15px] snap-center" alt="IMG_1612" /> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Expositions">
+        <div class="w-full  bg-darkgray pt-[100px] pb-[100px] md:pt-[50px] md:pb-[25px]">
+            <div class="container px-[20px] relative h-[850px] sm:h-[640px] ">
+                <h1 class="mainText text-[80px] text-lightred leading-[80px] sm:pb-[20px] pb-[50px] sm:text-[20px] sm:leading-[22px] md:text-[42px] md:leading-[42px]">Экспозиции посвященные юным героям войны</h1>
+                <div class="min-w-[calc((100vw-100%)/2+100%)] left-0 bottom-0 flex h-[640px] sm:h-[540px] overflow-x-scroll gap-[50px]">
+                    <div class="w-[405px] sm:w-[305px]">
+                        <img src="./images/7310155E-278D-47CD-9A93-9272760C7029_1_105_c.jpeg" alt="Image" class="w-[405px] sm:w-[305px] h-[540px] sm:h-[440px] object-cover snap-center rounded-[30px]">
+                        <h3 class="mainText mt-[15px] w-[405px] sm:w-[305px] sm:text-[16px] text-white text-[24px] leading-[24px]">Они первыми встретили войну</h3>
+                    </div>
+                    <div class="w-[405px]">
+                        <img src="./images/037C0A7E-D0E9-4F2D-A7EB-37AB2968F816_1_105_c.jpeg" alt="Image" class="w-[405px] h-[540px] object-cover sm:h-[440px] snap-center rounded-[30px]">
+                        <h3 class="mainText mt-[15px] w-[405px] sm:w-[305px] text-white text-[24px] sm:text-[16px] leading-[24px]">Юные участники партизанского движения</h3>
+                    </div>
+                    <div class="w-[405px]">
+                        <img src="./images/B2BB2CA6-AC03-4B84-86C6-724F3C5D7C9A_1_105_c.jpeg" alt="Image" class="w-[405px] h-[540px] object-cover sm:h-[440px] snap-center rounded-[30px]">
+                        <h3 class="mainText mt-[15px] w-[405px] sm:w-[305px] text-white text-[24px] sm:text-[16px] leading-[24px]">Юные участники подполья</h3>
+                    </div>
+                    <div class="w-[405px]">
+                        <img src="./images/3A19269A-665E-4AC8-AC7D-A6C67FB8845A_1_105_c.jpeg" alt="Image" class="w-[405px] h-[540px] object-cover sm:h-[440px] snap-center rounded-[30px]">
+                        <h3 class="mainText mt-[15px] w-[405px] sm:w-[305px] text-white text-[24px] sm:text-[16px] leading-[24px]">Юные кавалеры орденов Славы</h3>
+                    </div>
+                    <div class="w-[405px] mr-[50px]">
+                        <img src="./images/078528A6-A2CB-4D39-8573-883B3CA55F1E_1_105_c.jpeg" alt="Image" class="w-[405px] h-[540px] object-cover sm:h-[440px] snap-center rounded-[30px]">
+                        <h3 class="mainText mt-[15px] w-[405px] sm:w-[305px] text-white text-[24px] sm:text-[16px] leading-[24px]">Юные герои Советского Союза</h3>
+                    </div>
+                    <div class="w-[405px] mr-[50px]">
+                        <img src="./images/BA53E682-C517-49E4-84AF-EF4006C688B5_1_105_c.jpeg" alt="Image" class="w-[405px] h-[540px] object-cover sm:h-[440px] snap-center rounded-[30px]">
+                        <h3 class="mainText mt-[15px] w-[405px] sm:w-[305px] text-white text-[24px] sm:text-[16px] leading-[24px]">Юнги военно-морского флота</h3>
+                    </div>
+                    <div class="w-[405px] mr-[50px]">
+                        <img src="./images/BCACAA27-4BF3-43AC-A5EE-3D39ED559544_1_105_c.jpeg" alt="Image" class="w-[405px] h-[540px] object-cover sm:h-[440px] snap-center rounded-[30px]">
+                        <h3 class="mainText mt-[15px] w-[405px] sm:w-[305px] text-white text-[24px] sm:text-[16px] leading-[24px]">Юные воспитанники армейских соединений</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hero-information">
+        <div class="mt-[100px] container pb-[100px] md:px-[20px] md:mt-[50px]">
+            <div class="flex justify-between items-start md:flex-col" id="wrapper">
+                <div class="w-[715px] md:w-full">
+                    <h1 class="mainText text-[80px] text-lightred leading-[80px] sm:pb-[10px] md:pb-[20px] pb-[50px] sm:text-[20px] sm:leading-[22px] md:text-[42px] md:leading-[42px]">Виктор Ильич Ливенцев</h1>
+                    <p class="mt-[15px] secondaryText font-medium text-[32px] leading-[37px] w-[715px] sm:w-full sm:leading-[12px] sm:mt-[10px] sm:text-[11px] md:text-[24px] md:w-full md:leading-[24.5px]">
+                        Во время Великой Отечественной войны Виктор Ильич Ливенцев активно участвовал в партизанском движении и оборонительных боях в Беларуси, за что был награжден орденами и медалями за отвагу и героизм. С 1958 по 1978 год он занимал должность председателя Комитета по физической культуре и спорту при Совете Министров БССР, а также был избран депутатом Верховного Совета БССР на 5-10 созывах. С 1971 по 2009 год он командовал легендарным Батальоном белорусских орлят и активно занимался общественной деятельностью. Его имя увековечено на улицах в Бобруйске (2008 год) и Минске (2010 год), а также в столице регулярно проводится международный турнир по боксу, посвящённый его памяти.</p>
+                </div>
+                <div class="w-[580px] md:w-full">
+                    <img src="./images/loader-bg.svg" data-src="./images/IMG_5343.png" class="asyncImage md:mx-auto md:my-[30px]" />
+                    <p class="mt-[15px] secondaryText font-medium text-[32px] leading-[37px] w-[715px] sm:w-full sm:leading-[12px] sm:mt-[10px] sm:text-[11px] md:text-[24px] md:w-full md:leading-[24.5px]">29 июня Гимназии №7 г. Минска было присвоено имя Героя Советского Союза Ливенцева Виктора Ильича. Носить имя героя – большая честь и ответственность для учреждения образования.</p>
+                </div>
+            </div>
+            <div class="mt-[30px] flex w-full justify-between md:grid md:grid-cols-2 md:gap-[30px]" id="images">
+                <img src="./images/loader-bg.svg" data-src="./images/IMG_5339.png" class="asyncImage md:w-[100%]" />
+                <img src="./images/loader-bg.svg" data-src="./images/IMG_5338.png" class="asyncImage md:w-[100%]" />
+                <img src="./images/loader-bg.svg" data-src="./images/IMG_5337.png" class="asyncImage md:w-[100%]" />
+                <img src="./images/loader-bg.svg" data-src="./images/IMG_5341.png" class="asyncImage md:w-[100%]" />
+            </div>
+        </div>
+    </section>
+</body>
+</html>
